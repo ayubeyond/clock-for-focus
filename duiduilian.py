@@ -8,7 +8,7 @@ data = pd.read_csv('couplet.csv')
 upper = data['upper'].tolist()
 lower = data['lower'].tolist()
 
-# 定义一个函数，输入一句上联，输出一句下联
+# 定义一个函数，输入上联，输出下联
 def generate_couplet(upper_couplet):
   # 使用jieba分词对上联进行分词
   upper_words = list(jieba.cut(upper_couplet))
